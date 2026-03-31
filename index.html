@@ -4,11 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WOLOLO</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.;
+            margin: 0;
+            padding: 0;
+            background-color: #6A79A1;
+            color: #f4f6f9;
+        }
+
+        header {
+            background-color: #0D2B78;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #2E3033;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        nav a {
+             color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 400;
+            font-size: 1.0rem;
+            letter-spacing: 0.5px;
+        }
+
+        nav a:hover {
+            color: #9042f5;
+            text-decoration: underline;
+        }
+
+         section h2 {
+            color: #6A79A1;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>Bienvenido</h1>
-    <h2>Etiquetas basicas de html</h2>
-    <p>parrafo -> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores eos voluptates, harum quaerat sapiente nemo officiis animi placeat alias voluptas deserunt nostrum reiciendis distinctio temporibus vitae ipsum quibusdam. Saepe!</p>
+    <header>
+        <h1>Desarrollo Web Fullstack</h1>
+    </header>
+
+    <nav>
+        <a href="#formulario">Formulario</a>
+    </nav>
+
+    <section id="#formulario">
+        <h2>Ejemplo de Formulario</h2>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4"></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
     
 </body>
